@@ -1,0 +1,31 @@
+:root{
+    --font-Catamaran: font-family: 'Catamaran', sans-serif;
+    --font-Mirza: font-family: 'Mirza', cursive;
+    --font-Pragati: font-family: 'Pragati Narrow', sans-serif;
+
+    --font-Montserrat: font-family: 'Montserrat', sans-serif;
+    --font-Nunito: font-family: 'Nunito', sans-serif;
+    --font-Signika: font-family: 'Signika', sans-serif;
+
+    --font-Istok: font-family: 'Istok Web', sans-serif;
+    --font-Franklin: font-family: 'Libre Franklin', sans-serif;
+    --font-Orienta: font-family: 'Orienta', sans-serif;
+
+    --font-Cabin: font-family: 'Cabin', sans-serif;
+    --font-Hind: font-family: 'Hind', sans-serif;
+    --font-Mitr: font-family: 'Mitr', sans-serif;
+
+    --font-Cuprum: font-family: 'Cuprum', sans-serif;
+    --font-News: font-family: 'News Cycle', sans-serif;
+    --font-Mukta: font-family: 'Mukta', sans-serif;
+
+    --font-Coda: font-family: 'Coda', cursive;
+    --font-Cento: font-family: 'Quattrocento Sans', sans-serif;
+    --font-Cairo: font-family: 'Cairo', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

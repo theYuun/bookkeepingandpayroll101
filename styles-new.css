@@ -1,0 +1,58 @@
+.top-details{
+    
+    height: 30px;
+    width: 1.2 vw;
+    transform: translateX(-0.1 vw);
+    border-bottom: 1px solid black;
+    background-color: white;
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(63,227,227,1) 50%);
+}
+
+.top-spans{
+    padding: 0px 20px 0px 20px;
+    color: white;
+}
+
+.top-span{
+
+}
+
+.top-phone{
+
+}
+
+.top-email{
+    
+}
+
+.top-spacer{
+    flex: 1;
+}
+
+.top-hours{
+    
+}
+
+.top-icon{
+    position: relative;
+    transform: translateY(2px);
+}
+
+.top-icon-phone{
+    
+}
+
+.top-icon-email{
+    transform: translateY(4px);
+}
+
+.top-icon-hours{
+
+}
+
+body{
+    height: 3000px;
+}
