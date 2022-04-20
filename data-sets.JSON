@@ -1,0 +1,173 @@
+{
+    // will apply styling to content section according to type of data set
+    "content-type":
+    [
+        {
+            // image on left, text on right, top to bottom: name, email, phone number
+            "type" : "profile"
+        },
+        {
+            // a series of text bullets in vertical direction
+            "type" : "simple-lines"
+        },
+        {
+            // a profile layout has an image on left, text on right, top to bottom: name, company/institute and description
+            // justified to left
+            "type" : "profiles-left"
+        },
+        {
+            // a profile layout has an image on left, text on right, top to bottom: name, company/institute and description
+            // justified to right
+            "type" : "profiles-right"
+        },
+        {
+            // image of left, text-based name on right justified to left
+            "type" : "social-media"
+        }
+    ],
+    
+    "contact-details":
+    [
+        {
+            "data" :
+            [
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "email" : "email",
+                    "phone-number" : "phone-number"
+                }
+            ],
+            "content-type" : "profile"
+        }
+    ],
+
+    "what-we-do":
+    [
+        {
+            "items" :
+            [
+                "Highly proficient and dedicated bookkeeping services",
+                "Pastel payroll services",
+                "Competitive fees",
+                "Technical expertise and advice"
+            ],
+            "content-type" : "simple-lines"
+        }
+    ],
+
+    "credentials":
+    [
+        {
+            "data" :
+            [
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "institute" : "insitute",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "institute" : "insitute",
+                    "description" : "description"
+                }
+            ],
+            "content-type" : "profiles-left"
+        }
+    ],
+
+    "testimonials":
+    [
+        {
+            "data" :
+            [
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                }
+            ],
+            "content-type" : "profiles-left"
+        }
+    ],
+
+    "3rd-parties":
+    [
+        {
+            "data" : 
+            [
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "company" : "company",
+                    "description" : "description"
+                }
+            ],
+            "content-type" : "profiles-left"
+        }
+    ],
+
+    "social-media":
+    [
+        {
+            "data" : [
+                {
+                    "image" : "./images/image.jpg",
+                    "company" : "company"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "company" : "company"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "company" : "company"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "company" : "company"
+                }
+            ],
+            "content-type" : "social-media"
+        }
+    ]
+}

@@ -8,7 +8,11 @@
     <title>Bookkeeping And Payroll 101</title>
     <script src="https://kit.fontawesome.com/8d692957d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-new.css" />
+    <!--
+        <link rel="stylesheet" href="styles-header.css" />
+        <link rel="stylesheet" href="styles-top-details.css" />
+        <link rel="stylesheet" href="styles-content.css" />
+    -->
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,35 +31,460 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Coda&family=Quattrocento+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="top-details">
-        <span class="top-spans top-phone">
-            <svg class="top-icon top-icon-phone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
-            +27 74 767 1986
-        </span>
-        <span class="top-spans top-email">
-            <svg class="top-icon top-icon-email" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
-            admin@bookkeepingandpayroll.co.za
-        </span>
-        <span class="top-spans top-spacer"></span>
-        <span class="top-spans top-hours">
-            <svg class="top-icon top-icon-hours" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>
-            8:00 - 16:00
-        </span>
-    </div>
-    <header class="header" id="header"><img src="./images/header-img.jpg" alt="" class="header-img" id="header-img"><h1 class="header-title" id="header-title"></h1></header>
-    <nav class="nav" id="nav">
-        <ul class="nav-list" id="nav-lins">
-            <li class="nav-list-item" id="nav-list-item">CONTACT DETAILS</li>
-            <li class="nav-list-item" id="nav-list-item">WHAT WE DO</li>
-            <li class="nav-list-item" id="nav-list-item">TESTIMONIALS</li>
-            <li class="nav-list-item" id="nav-list-item">CREDENTIALS</li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="top-details">
+            <span class="top-spans top-phone">
+                <svg class="top-icon top-icon-phone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                +27 74 767 1986
+            </span>
+            <span class="top-spans top-email">
+                <svg class="top-icon top-icon-email" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                admin@bookkeepingandpayroll.co.za
+            </span>
+            <span class="top-spans top-spacer"></span>
+            <span class="top-spans top-hours">
+                <svg class="top-icon top-icon-hours" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>
+                8:00 - 16:00
+            </span>
+        </div>
+        <h1 class="header-title">
+            <span class="header-capital">b</span>ookkeeping and payroll 101
+        </h1>
+        <div class="header-line">
+            <span class="header-line-01"></span>
+            <span class="header-line-02"></span>
+            <span class="header-line-03"></span>
+        </div>
+        <nav class="nav">
+            <a href="#section-contact">
+                <span>CONTACT DETAILS</span>
+            </a>
+            <a href="#section-what-we-do">
+                <span>WHAT WE DO</span>
+            </a>
+            <a href="#section-testimonials">
+                <span>TESTIMONIALS</span>
+            </a>
+            <a href="#section-credentials">
+                <span>CREDENTIALS</span>
+            </a>
+            <a href="#section-3rd-parties">
+                <span>3RD PARTIES</span>
+            </a>
+            <a href="#section-social-media">
+                <span>SOCIAL MEDIA</span>
+            </a>
+        </nav>
+    </header>
     <content class="content" id="content">
-        <section class="section-contact" id="section-contact"></section>
-        <section class="section-whatwedo" id="section-whatwedo"></section>
-        <section class="section-testimonials" id="section-testimonials"></section>
-        <section class="section-credentials" id="section-credentials"></section>
+        <!-- Immediately below are the templates used to create the content objects -->
+        <!--<section class="content-section" id="section-****">
+            <div class="section-side-bars section-side-bars-right">
+                <div class="side-bar-bars bars-right">
+                    <div class="side-bar-outer"></div>
+                    <div class="side-bar-mid"></div>
+                    <div class="side-bar-inner"></div>
+                </div>
+                <div class="lines">
+                    <hr class="line-short">
+                    <hr class="line-long">
+                </div>
+            </div>
+            <div class="section-content section-content-right">
+                <div class="section-content-spacer"></div>
+                <div class="section-content-main">
+                    
+                    Actual section content here
+                    
+                </div>
+            </div>
+        </section>
+        -->
+        <!--<section class="content-section" id="section-****">
+            <div class="section-content section-content-left">
+                <div class="section-content-main">
+                
+                    Actual section content here
+                    
+                </div>
+                <div class="section-content-spacer"></div>
+            </div>
+            <div class="section-side-bars section-side-bars-left">
+                <div class="lines">
+                    <hr class="line-long">
+                    <hr class="line-short">
+                </div>
+                <div class="side-bar-bars bars-left">
+                    <div class="side-bar-inner"></div>
+                    <div class="side-bar-mid"></div>
+                    <div class="side-bar-outer"></div>
+                </div>
+            </div>
+        </section>
+    -->
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-contact"></div>
+            <div class="section-side-bars section-side-bars-right">
+                <div class="side-bar-outer"></div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-inner-set side-bar-inner-set-right">
+                    <div class="side-bar-inner"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner-line-long"></div>
+                </div>
+                </div>
+            </div>
+            <div class="section-content section-content-right">
+                <div class="section-content-spacer"></div>
+                <div class="section-content-main">
+                    <!--                     
+                    Actual section content here
+                     -->
+                    <h2 class="section-heading">CONTACT_</h2>
+                    <div class="profile section-content">
+                        <div class="profile-image">
+                            <img src="./images/martha.jpg">
+                        </div>
+                        <div>
+                            <h5>Martha</h5>
+                            <a href="mailto:admin@bookkeepingandpayroll101.co.za">admin@bookkeepingandpayroll101.co.za</a><br>
+                            +27 74 767 1986
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-what-we-do"></div>
+            <div class="section-content section-content-left">
+                <div class="section-content-main">
+                    <!--
+                    Actual section content here
+                     -->
+                    <h2 class="section-heading">_WHAT WE DO</h2>
+                    <div  class="simple-lines section-content">
+                        <ul>
+                            <li>
+                                Highly proficient and dedicated bookkeeping services
+                            </li>
+                            <li>
+                                Pastel payroll services
+                            </li>
+                            <li>
+                                Competitive fees
+                            </li>
+                            <li>
+                                Technical expertise and advice
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-content-spacer"></div>
+            </div>
+            <div class="section-side-bars section-side-bars-left">
+                <div class="side-bar-inner-set side-bar-inner-set-left">
+                    <div class="side-bar-inner-line-long"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner"></div>
+                </div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-outer"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-testimonials"></div>
+            <div class="section-side-bars section-side-bars-right">
+                <div class="side-bar-outer"></div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-inner-set side-bar-inner-set-right">
+                    <div class="side-bar-inner"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner-line-long"></div>
+                </div>
+                </div>
+            </div>
+            <div class="section-content section-content-right">
+                <div class="section-content-spacer"></div>
+                <div class="section-content-main">
+                    <!--
+                        Actual section content here
+                    -->
+            <h2 class="section-heading">TESTIMONIALS</h2>
+            <div class="profiles-grid section-content">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./images/person-01.jpg">
+                    </div>
+                    <div class="">
+                        <h5>John Smith</h5>
+                        <h6>Business</h6>
+                        Martha is great!<br>
+                        Still an active client of hers.<br>
+                        She get's in touch when things need to get done.
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./images/person-02.jpg">
+                    </div>
+                    <div class="">
+                        <h5>John Smith</h5>
+                        <h6>Business</h6>
+                        Martha is great!<br>
+                        Still an active client of hers.<br>
+                        She get's in touch when things need to get done.
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./images/person-03.jpg">
+                    </div>
+                    <div class="">
+                        <h5>John Smith</h5>
+                        <h6>Business</h6>
+                        Martha is great!<br>
+                        Still an active client of hers.<br>
+                        She get's in touch when things need to get done.
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./images/person-04.jpg">
+                    </div>
+                    <div class="">
+                        <h5>John Smith</h5>
+                        <h6>Business</h6>
+                        Martha is great!<br>
+                        Still an active client of hers.<br>
+                        She get's in touch when things need to get done.
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-credentials"></div>
+            <div class="section-content section-content-left">
+                <div class="section-content-main">
+                    <!--
+                        Actual section content here
+                    -->
+                    <h2 class="section-heading">CREDENTIALS_</h2>
+                    <div class="profiles-grid section-content">
+                        <div class="profile">
+                            <div class="profile-image profile-image-credential">
+                                <img src="./images/credential.png">
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <h5>Qualification</h5>
+                                    </li>
+                                    <li>
+                                        <h6>Institute</h6>
+                                    </li>
+                                    <li>
+                                        A summary description qualifying the awarded to perform a certain set of operations to a client base.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image profile-image-credential">
+                                <img src="./images/credential.png">
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <h5>Qualification</h5>
+                                    </li>
+                                    <li>
+                                        <h6>Institute</h6>
+                                    </li>
+                                    <li>
+                                        A summary description qualifying the awarded to perform a certain set of operations to a client base.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image profile-image-credential">
+                                <img src="./images/credential.png">
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <h5>Qualification</h5>
+                                    </li>
+                                    <li>
+                                        <h6>Institute</h6>
+                                    </li>
+                                    <li>
+                                        A summary description qualifying the awarded to perform a certain set of operations to a client base.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image profile-image-credential">
+                                <img src="./images/credential.png">
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <h5>Qualification</h5>
+                                    </li>
+                                    <li>
+                                        <h6>Institute</h6>
+                                    </li>
+                                    <li>
+                                        A summary description qualifying the awarded to perform a certain set of operations to a client base.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content-spacer"></div>
+            </div>
+            <div class="section-side-bars section-side-bars-left">
+                <div class="side-bar-inner-set side-bar-inner-set-left">
+                    <div class="side-bar-inner-line-long"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner"></div>
+                </div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-outer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-credentials"></div>
+            <div class="section-side-bars section-side-bars-right">
+                <div class="side-bar-outer"></div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-inner-set side-bar-inner-set-right">
+                    <div class="side-bar-inner"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner-line-long"></div>
+                </div>
+                </div>
+            </div>
+            <div class="section-content section-content-right">
+                <div class="section-content-spacer"></div>
+                <div class="section-content-main">
+                    <!--
+                        Actual section content here
+                    -->
+                    <h2 class="section-heading">3RD PARTIES</h2>
+                    <div class="profiles-grid section-content">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="./images/excel.jpg">
+                            </div>
+                            <div class="">
+                                <h5>Excel</h5>
+                                <h6>Microsoft</h6>
+                                <span>We use this software to perform and speed up certain aspects of the services we provide to our client base.</span>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="./images/quickbooks.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h5>Quickbooks</h5>
+                                <h6>Intuit</h6>
+                                <span>We use this software to perform and speed up certain aspects of the services we provide to our client base.</span>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image profile-image-sage">
+                                <img src="./images/sage.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h5>Sage</h5>
+                                <h6>Sage</h6>
+                                <span>We use this software to perform and speed up certain aspects of the services we provide to our client base.</span>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="./images/payroll.jpg">
+                            </div>
+                            <div class="profile-details">
+                                <h5>Payroll</h5>
+                                <h6>Pastel</h6>
+                                <span>We use this software to perform and speed up certain aspects of the services we provide to our client base.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="content-section">
+            <div class="section-anchor-displace" id="section-3rd-parties"></div>
+            <div class="section-content section-content-left">
+                <div class="section-content-main">
+                    <!--
+                        Actual section content here
+                    -->
+                    <h2 class="section-heading">SOCIAL MEDIA</h2>
+                    <div class="profiles-grid section-content">
+                        <div class="profile-social-media">
+                            <div class="social-media-image">
+                                <img src="./images/facebook.jpg">
+                            </div>
+                            <div class="social-media-details">
+                                <h5>Facebook</h5>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <div class="social-media-image">
+                                <img src="./images/instagram.jpg">
+                            </div>
+                            <div class="social-media-details">
+                                <h5>Instagram</h5>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <div class="social-media-image social-media-image-twitter">
+                                <img src="./images/twitter.jpg">
+                            </div>
+                            <div class="social-media-details">
+                                <h5>Twitter</h5>
+                            </div>
+                        </div>
+                        <div class="profile-social-media">
+                            <div class="social-media-image social-media-image-pinterest">
+                                <img src="./images/pinterest.jpg">
+                            </div>
+                            <div class="social-media-details">
+                                <h5>Pinterest</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content-spacer"></div>
+            </div>
+            <div class="section-side-bars section-side-bars-left">
+                <div class="side-bar-inner-set side-bar-inner-set-left">
+                    <div class="side-bar-inner-line-long"></div>
+                    <div class="side-bar-inner-line-short"></div>
+                    <div class="side-bar-inner"></div>
+                </div>
+                <div class="side-bar-mid"></div>
+                <div class="side-bar-outer"></div>
+                </div>
+            </div>
+        </section>
     </content>
     <footer class="footer" id="footer">
         <span class="social-links" id="social-links"></span>
