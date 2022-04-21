@@ -265,7 +265,7 @@ li{
     width: 100%;
     padding: 10px;
     letter-spacing: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .profiles-grid{
