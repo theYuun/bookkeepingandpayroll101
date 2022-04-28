@@ -46,7 +46,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: rgba(0,0,0,0.1);
+    /* background-color: rgba(0,0,0,0.1); */
     font-family: var(--font-Orienta);
     font-size: 1rem;
 
