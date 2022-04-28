@@ -106,14 +106,13 @@ text{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .top-spans a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: center;
     gap: 10px;
 }
 
@@ -146,7 +145,7 @@ text{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75);
-    width: fit-content;
+    width: max-content;
 }
 
 .top-phone-hover{
