@@ -11,17 +11,19 @@
     --color-04: #73CDA7;
     --color-05: #99E6B3;
     --color-nav-over: #36B7AC;
-
+    
     --top-phone-hover: 0;
     --top-email-hover: 0;
     --top-hours-hover: 0;
     --top-hover: 0;
-
-    --font-Franklin: font-family: title-font, sans-serif;
-    --font-Istok: font-family: heading-font, sans-serif;
-    --font-Orienta: font-family: text-font, sans-serif;
+    
+    --font-Franklin: title-font, sans-serif;
+    --font-Istok:  heading-font, sans-serif;
+    --font-Orienta:  text-font, sans-serif;
     
     --shadow: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.75));
+
+    --back-to-top: 1;
 }
 
 @font-face {
@@ -91,7 +93,6 @@ li{
 .top-details{
     height: 30px;
     width: 1 vw;
-    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,22 +120,10 @@ text{
 .top-phone{
 }
 
-.top-phone:hover{
-    --top-phone-hover: 1;
-}
-
 .top-email{
 }
 
-.top-email:hover{
-    --top-email-hover: 1;
-}
-
 .top-hours{
-}
-
-.top-hours:hover{
-    --top-hours-hover: 1;
 }
 
 .top-hover{
@@ -172,25 +161,27 @@ text{
     position: sticky;
     top: 0px;
     width: 1 vw;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     z-index: 100;
 }
 
 /*=== Title ===*/
 .header-title{
-    padding-left: 30px;
+    margin-left: 5%;
     text-transform: uppercase;
+    max-width: 90%;
+    font-size: 5vw;
 }
 
 .header-capital{
-    font-size: 4rem;
+    font-size: 7vw;
 }
 
 .header-line{
     height: 3px;
     width: 1 vw;
     display: flex;
-    background-color:#000000;
+    background-color:black;
 }
 .header-line-01{
     flex: 0.35;
@@ -256,7 +247,7 @@ text{
 /*=== Section contents ===*/
 .section-anchor-displace{
     position: absolute;
-    top: -167px;
+    top: calc(-7.5vw - 100px);
 }
 
 .section-content{
@@ -300,7 +291,7 @@ text{
 
 .profiles-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
 }
 
@@ -329,6 +320,24 @@ text{
     max-height: 100%;
     max-width: 100%;
     border-radius: 10px;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+}
+
+/*=== Testimonial Variants of Profiles ===*/
+
+.testimonial-object h5{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.testimonial-object h5::before{
+    content: "-";
+    padding-right: 5px;
 }
 
 /*=== Social Media Variants of Profiles ===*/
@@ -420,20 +429,63 @@ text{
 }
 /*=== End of content settings ===*/
 
+.footer{
+    background-color: var(--color-01);
+    height: 120px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*=== End of Footer ===*/
+
+/*=== Start of Back To Top Button ===*/
+
+.back-to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-03);
+    z-index: 2;
+    border-radius: 10px;
+    transform:rotate(90deg);
+    opacity: 0.25;
+    transition: 0.25s opacity ease;
+}
+
+.back-to-top.active{
+    opacity: 1;
+}
+
+.back-to-top a{
+    color: white;
+    text-decoration: none;
+}
+.back-to-top a:visited{
+    color: white;
+}
+
+.back-to-top a div{
+    display: relative;
+    transform:translate(46%,-28%);
+    width: 50%;
+    height: 50%;
+    font-size: 50px;
+    /* border: 1px solid white; */
+}
+
+/*=== End of Back To Top Button ===*/
 
 /*=== Start of media queries ===*/
 
 @media only screen and (max-width: 768px){
     :root{
-        --default-font-size: 10px;
-    }
-
-    body{
-        /* background-color: green; */
-    }
-
-    .header-title{
-        padding-left: 20px;
+        --default-font-size: 12px;
     }
     
     .profile{
@@ -447,6 +499,18 @@ text{
 
     .top-text{
         display: none;
+    }
+
+    .top-phone:hover{
+        --top-phone-hover: 1;
+    }
+    
+    .top-email:hover{
+        --top-email-hover: 1;
+    }
+    
+    .top-hours:hover{
+        --top-hours-hover: 1;
     }
 }
 
