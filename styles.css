@@ -247,7 +247,7 @@ text{
 /*=== Section contents ===*/
 .section-anchor-displace{
     position: absolute;
-    top: calc(-7.5vw - 100px);
+    top: calc(-7.5vw - 110px);
 }
 
 .section-content{
