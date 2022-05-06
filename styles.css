@@ -438,6 +438,7 @@ li{
     padding: 20px;
     position: relative;
     z-index: 2;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
