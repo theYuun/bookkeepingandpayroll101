@@ -88,8 +88,16 @@ li{
 }
 /*=== End of base settings ===*/
 
-/*=== Top details settings ===*/
-/*=== Top details ===*/
+/*=== Start of Header ===*/
+.header{
+    position: sticky;
+    top: 0px;
+    width: 1 vw;
+    background-color: rgb(230, 230, 230);
+    z-index: 100;
+}
+
+/*=== Start of Top Details ===*/
 .top-details{
     height: 30px;
     width: 1 vw;
@@ -154,20 +162,9 @@ li{
 .top-spacer{
     flex:1;
 }
+/*=== End of top details ===*/
 
-/*=== End of top details settings===*/
-
-/*=== Header settings ===*/
-/*=== Header ===*/
-.header{
-    position: sticky;
-    top: 0px;
-    width: 1 vw;
-    background-color: rgb(230, 230, 230);
-    z-index: 100;
-}
-
-/*=== Title ===*/
+/*=== Start of Title ===*/
 .header-title{
     margin-left: calc(30px + 5%);
 }
@@ -201,8 +198,9 @@ li{
     background-color: var(--color-04);
     filter: var(--shadow);
 }
+/*=== End of Title ===*/
 
-/*=== Navigation ===*/
+/*=== Start of Navigation ===*/
 .nav{
     height: 60px;
     width: 1 vw;
@@ -231,25 +229,26 @@ li{
     margin:auto;
     text-align: center;
 }
-/*=== End of header settings ===*/
+/*=== End of Navigation ===*/
 
-/*=== Start of content settings ===*/
-/*=== Content ===*/
-.content{
+/*=== End of Header ===*/
+
+/*=== Start of Main ===*/
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*=== Sections ===*/
-.content-section{
+/*=== Start of Sections ===*/
+.section{
     width: 100%;
     position: relative;
     min-height: 150px;
     margin: 20px;
 }
 
-/*=== Section contents ===*/
+/*=== Start of Section contents ===*/
 .section-anchor-displace{
     position: absolute;
     top: calc(-9vw - 90px);
@@ -315,7 +314,7 @@ li{
     flex-direction: row-reverse;
 }
 
-/*=== Profiles ===*/
+/*=== Start of Profiles ===*/
 .profile{
     width: 49%;
     border-radius: 10px;
@@ -359,7 +358,7 @@ li{
     width: 95%;
 }
 
-/*=== Testimonial Variants of Profiles ===*/
+/*=== Start of Testimonial Variants of Profiles ===*/
 .profile-testimonial{
     grid-template-columns: auto;
 }
@@ -374,8 +373,9 @@ li{
     content: "-";
     padding-right: 5px;
 }
+/*=== End of Testimonial variants of Profiles ===*/
 
-/*=== Social Media Variants of Profiles ===*/
+/*=== Start of Social Media variants of Profiles ===*/
 .profile-social{
     grid-template-columns: auto 60px;
 }
@@ -391,8 +391,11 @@ li{
     max-height: 100%;
     border-radius: 10px;
 }
+/*=== End of Social Media variants of Profiles===*/
 
-/*=== Decorative Side bars ===*/
+/*=== End of Profiles===*/
+
+/*=== Start of Decorative Side bars ===*/
 .section-side-bars{
     /* opacity:0; */
     position: absolute;
@@ -490,7 +493,13 @@ li{
     position: relative;
     top: 55px;
 }
-/*=== End of content settings ===*/
+/*=== End of Decorative Sidebar ===*/
+
+/*=== End of Section Contents ===*/
+
+/*=== End of Sections ===*/
+
+/*=== Start of Footer ===*/
 
 .footer{
     background-color: var(--color-01);
@@ -515,7 +524,7 @@ li{
     width: 50px;
     height: 50px;
     background-color: var(--color-03);
-    z-index: 2;
+    z-index: 2000;
     border-radius: 10px;
     transform:rotate(90deg);
     opacity: 0.25;
@@ -544,6 +553,8 @@ li{
 }
 
 /*=== End of Back To Top Button ===*/
+
+/*=== End of Content ===*/
 
 /*=== Start of media queries ===*/
 
