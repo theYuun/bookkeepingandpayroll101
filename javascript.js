@@ -1,3 +1,13 @@
+/*=== catching events ===*/
+
+window.addEventListener("load", decorate);
+window.addEventListener("load", highlightMenuButtonsByView);
+window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", highlightMenuButtonsByView);
+
+document.querySelector("#privacyPolicyEnable").addEventListener("click", showPrivacyPolicy);
+document.querySelector("#privacyPolicyDisable").addEventListener("click", hidePrivacyPolicy);
+
 /*=== Set up Section Decorators ===*/
 /*=== Doing this so I need to change fewer objects that are copied in multiple places ===*/
 let sectionDecoLeft = `
@@ -20,9 +30,6 @@ let sectionDecoRight = `
     </div>
 `;
 
-window.addEventListener("load", decorate);
-window.addEventListener("scroll", reveal);
-
 function decorate() {
 
     let sectionsRight = document.querySelectorAll(".section-content-right");
@@ -44,25 +51,88 @@ function decorate() {
     })
 }
 
-/*=== The functionality to make the Back-to-top buton appear when you scroll to the bottom of the screen ===*/
+/*=== The functionality that makes objects displayed/hidden ===*/
+function showPrivacyPolicy()
+{
+    document.querySelector(".privacy-policy").classList.remove("hidden");
+    document.querySelector(".content").classList.add("blur10");
+}
+function hidePrivacyPolicy()
+{
+    document.querySelector(".privacy-policy").classList.add("hidden");
+    document.querySelector(".content").classList.remove("blur10");
+}
+
+/*=== The functionality to make the Back-to-top button appear when you scroll to the bottom of the screen ===*/
 function reveal(){
 
-    console.log("scroll");
     let revealPoint = document.querySelector(".reveal");
-    console.log("revealPoint: " + revealPoint);
     let reveal = document.querySelector(".back-to-top");
-    console.log("reveal: " + reveal);
     
     let windowHeight = window.innerHeight;
     let elementTop = revealPoint.getBoundingClientRect().top;
-    // let elementVisible = 0;
 
-    if (elementTop < windowHeight)// - elementVisible)
+    if (elementTop < windowHeight)
     {
         reveal.classList.add("active");
     }
     else
     {
         reveal.classList.remove("active");
+    }
+}
+
+/*=== The functionality to make the Navigation buttons highlight when you scroll to the bottom of the screen ===*/
+
+function highlightMenuButtonsByView(){
+
+    let windowHeight = window.innerHeight;
+    let highlightRange = 125;
+
+    let highlightPoints = [
+        document.querySelector("#section-contact"),
+        document.querySelector("#section-what-we-do"),
+        document.querySelector("#section-testimonials"),
+        document.querySelector("#section-credentials"),
+        document.querySelector("#section-3rd-parties"),
+        document.querySelector("#section-social-media")
+    ];
+
+    let highlights = [
+        document.querySelector(".nav-contact"),
+        document.querySelector(".nav-what-we-do"),
+        document.querySelector(".nav-testimonials"),
+        document.querySelector(".nav-credentials"),
+        document.querySelector(".nav-3rd-parties"),
+        document.querySelector(".nav-social-media")
+    ]
+
+    let elementTops = [
+        highlightPoints[0].getBoundingClientRect().top,
+        highlightPoints[1].getBoundingClientRect().top,
+        highlightPoints[2].getBoundingClientRect().top,
+        highlightPoints[3].getBoundingClientRect().top,
+        highlightPoints[4].getBoundingClientRect().top,
+        highlightPoints[5].getBoundingClientRect().top
+    ]
+
+    for(let hlp = 0; hlp < highlightPoints.length; hlp++)
+    {
+        if(hlp < highlightPoints.length)
+        {
+            if(elementTops[hlp] < highlightRange && elementTops[hlp] > -highlightRange)
+                highlights[hlp].classList.add("nav-highlight");
+            else
+                highlights[hlp].classList.remove("nav-highlight");
+        }
+
+        if(hlp == highlightPoints.length-1)
+        {
+            if(elementTops[hlp] < window.innerHeight-500)
+                highlights[hlp].classList.add("nav-highlight");
+            else
+                highlights[hlp].classList.remove("nav-highlight");
+        }
+        
     }
 }
