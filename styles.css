@@ -57,7 +57,8 @@
 }
 
 body{
-    background-color: #e5e5e5;
+    background: linear-gradient(180deg, var(--color-01) 10%, var(--color-04) 70%);
+    background-attachment: fixed;
 }
 
 h1{
@@ -265,7 +266,7 @@ li{
     top: calc(-9vw - 90px);
     height: 10px;
     width: 10px;
-    background-color: rgba(0,0,0,0.1);
+    /* background-color: rgba(0,0,0,0.1); */
 }
 
 .section-content{
