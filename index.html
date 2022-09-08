@@ -437,6 +437,21 @@
             </p>
         </div>
     </div>
-    <script src="./javascript.js" ></script>
+    <script>
+        window.addEventListener('load',function(){
+          try {
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(item){
+              item.addEventListener('click', function(){
+                gtag('event', 'conversion', {'send_to': 'AW-1035572310/lJ_nCLTt-9wDENao5u0D'});
+              });
+            });
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(item){
+              item.addEventListener('click', function(){
+                gtag('event', 'conversion', {'send_to': 'AW-1035572310/lB7LCLHt-9wDENao5u0D'});
+              });
+            });
+          }catch(err){}
+        })
+      </script>
 </body>
 </html>
