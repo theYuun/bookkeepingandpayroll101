@@ -1,28 +1,78 @@
 {
-    // will apply styling to content section according to type of data set
     "content-type":
     [
         {
-            // image on left, text on right, top to bottom: name, email, phone number
-            "type" : "profile"
+            "type" : "profile-user",
+            "details": [
+                {
+                    "hasImage": "yes",
+                    "imagePos": "left",
+                    "hasSubHeading": "no",
+                    "hasText": "no",
+                    "textPos": "right",
+                    "textJustify": "left",
+                    "hasEmail": "yes",
+                    "hasPhone": "yes"
+            }]
+
         },
         {
-            // a series of text bullets in vertical direction
-            "type" : "simple-lines"
+            "type" : "simple-lines",
+            "details": [
+                {
+                    "hasImage": "no",
+                    "imagePos": "left",
+                    "hasText": "yes",
+                    "textPos": "left",
+                    "textJustify": "right",
+                    "hasEmail": "no",
+                    "hasPhone": "no"
+            }]
         },
         {
-            // a profile layout has an image on left, text on right, top to bottom: name, company/institute and description
-            // justified to left
-            "type" : "profiles-left"
+            "type" : "profiles-left",
+            "details": [
+                {
+                    "hasImage": "yes",
+                    "imagePos": "left",
+                    "hasSubHeading": "yes",
+                    "hasText": "yes",
+                    "textPos": "left",
+                    "textJustify": "right",
+                    "hasEmail": "no",
+                    "hasPhone": "no"
+            }]
         },
         {
             // a profile layout has an image on left, text on right, top to bottom: name, company/institute and description
             // justified to right
-            "type" : "profiles-right"
+            "type" : "profiles-right",
+            "details": [
+                {
+                    "hasImage": "yes",
+                    "imagePos": "right",
+                    "hasSubHeading": "yes",
+                    "hasText": "yes",
+                    "textPos": "left",
+                    "textJustify": "right",
+                    "hasEmail": "no",
+                    "hasPhone": "no"
+            }]
         },
         {
             // image of left, text-based name on right justified to left
-            "type" : "social-media"
+            "type" : "profile-social-media",
+            "details": [
+                {
+                    "hasImage": "yes",
+                    "imagePos": "right",
+                    "hasSubHeading": "no",
+                    "hasText": "yes",
+                    "textPos": "right",
+                    "textJustify": "right",
+                    "hasEmail": "no",
+                    "hasPhone": "no"
+            }]
         }
     ],
     
@@ -38,43 +88,23 @@
                     "phone-number" : "phone-number"
                 }
             ],
-            "content-type" : "profile"
+            "content-type" : "profile-user"
         }
     ],
 
     "what-we-do":
     [
         {
-            "items" :
-            [
-                "Highly proficient and dedicated bookkeeping services",
-                "Pastel payroll services",
-                "Competitive fees",
-                "Technical expertise and advice"
-            ],
-            "content-type" : "simple-lines"
-        }
-    ],
-
-    "credentials":
-    [
-        {
             "data" :
             [
-                {
-                    "image" : "./images/image.jpg",
-                    "name" : "name",
-                    "institute" : "insitute",
-                    "description" : "description"
-                },
-                {
-                    "image" : "./images/image.jpg",
-                    "name" : "name",
-                    "institute" : "insitute",
-                    "description" : "description"
-                }
+                "Highly proficient and dedicated bookkeeping services",
+                "Professional Pastel payroll services",
+                "Professional bookkeeping services",
+                "Technical expertise and advice",
+                "Administrative assistance",
+                "Statutory assistance"
             ],
-            "content-type" : "profiles-left"
+            "content-type" : "simple-lines"
         }
     ],
 
@@ -105,6 +135,28 @@
                     "image" : "./images/image.jpg",
                     "name" : "name",
                     "company" : "company",
+                    "description" : "description"
+                }
+            ],
+            "content-type" : "profiles-right"
+        }
+    ],
+
+    "credentials":
+    [
+        {
+            "data" :
+            [
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "institute" : "insitute",
+                    "description" : "description"
+                },
+                {
+                    "image" : "./images/image.jpg",
+                    "name" : "name",
+                    "institute" : "insitute",
                     "description" : "description"
                 }
             ],
@@ -142,7 +194,7 @@
                     "description" : "description"
                 }
             ],
-            "content-type" : "profiles-left"
+            "content-type" : "profiles-right"
         }
     ],
 
@@ -152,22 +204,21 @@
             "data" : [
                 {
                     "image" : "./images/image.jpg",
-                    "company" : "company"
+                    "company" : "Facebook",
+                    "name": "Profile Name"
                 },
                 {
                     "image" : "./images/image.jpg",
-                    "company" : "company"
+                    "company" : "Instagram",
+                    "name": "Profile Name"
                 },
                 {
                     "image" : "./images/image.jpg",
-                    "company" : "company"
-                },
-                {
-                    "image" : "./images/image.jpg",
-                    "company" : "company"
+                    "company" : "Twitter",
+                    "name": "Profile Name"
                 }
             ],
-            "content-type" : "social-media"
+            "content-type" : "profile-social-media"
         }
     ]
 }
